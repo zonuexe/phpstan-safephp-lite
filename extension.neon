@@ -1,0 +1,5 @@
+services:
+	-
+		class: zonuexe\PHPStan\SafePHP\Type\SafeFunctionsDynamicReturnTypeExtension
+		tags:
+		- phpstan.broker.dynamicFunctionReturnTypeExtension

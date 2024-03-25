@@ -1,0 +1,9 @@
+parameters:
+	level: max
+	paths:
+		- src
+	bootstrapFiles:
+		- vendor/symplify/easy-coding-standard/vendor/autoload.php
+includes:
+	- phar://phpstan.phar/conf/bleedingEdge.neon
+	- extension.neon
