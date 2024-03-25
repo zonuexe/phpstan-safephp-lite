@@ -6,7 +6,9 @@ A simple PHPStan extension for Safe PHP([thecodingmachine/safe]) functions.
 
 ## What is the difference from phpstan-safe-rule?
 
-[thecodingmachine/phpstan-safe-rule]
+[thecodingmachine/phpstan-safe-rule], maintained by the developers of Safe PHP, contains rules that recommend replacing built-in functions with Safe, but it hasn't been updated in a while.
+
+This package only provides typing for Safe functions, which wraps the DynamicReturnType extension shipped with PHPStan. If you update PHPStan in the future, the Safe function typing will automatically be improved.
 
 [thecodingmachine/phpstan-safe-rule]: https://github.com/thecodingmachine/phpstan-safe-rule
 
