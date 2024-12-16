@@ -35,7 +35,7 @@ class SafeFunctionsDynamicReturnTypeExtension
 		$builtinFuncCall = new FuncCall($builtinName, $functionCall->args);
 
 		$returnType = $scope->getType($builtinFuncCall);
-		$safeType = ParametersAcceptorSelector::selectSingle($functionReflection->getVariants())->getReturnType();
+		$safeType = ParametersAcceptorSelector::selectFromArgs($scope, $functionCall->getArgs(), $functionReflection->getVariants())->getReturnType();
 		$falseType = new ConstantBooleanType(false);
 
 		if ($safeType->isSuperTypeOf($falseType)->no()) {

@@ -6,8 +6,8 @@ function f(string $s): void
 {
 	assertType('mixed', \Safe\json_decode($s));
 	assertType('mixed', \json_decode($s));
-	assertType('mixed~stdClass', \Safe\json_decode($s, true));
-	assertType('mixed~stdClass', \json_decode($s, true));
+	assertType('mixed~object', \Safe\json_decode($s, true));
+	assertType('mixed~object', \json_decode($s, true));
 }
 
 function g(): void
