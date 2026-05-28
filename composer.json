@@ -3,13 +3,13 @@
     "description": "A simple PHPStan extension for Safe PHP functions",
     "license": "Apache-2.0",
     "require": {
-        "phpstan/phpstan": "^2.1"
+        "phpstan/phpstan": "^2.2"
     },
     "require-dev": {
         "php": ">=8.2",
-        "phpunit/phpunit": "^12.4",
+        "phpunit/phpunit": "^13.1",
         "symplify/easy-coding-standard": "^12.6",
-        "thecodingmachine/safe": "^3.3"
+        "thecodingmachine/safe": "^3.4"
     },
     "autoload": {
         "psr-4": {
