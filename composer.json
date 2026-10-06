@@ -3,7 +3,7 @@
     "description": "A simple PHPStan extension for Safe PHP functions",
     "license": "Apache-2.0",
     "require": {
-        "phpstan/phpstan": "^2.2"
+        "phpstan/phpstan": "^2.2 || ^2.3"
     },
     "require-dev": {
         "php": ">=8.2",
